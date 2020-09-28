@@ -16,4 +16,6 @@ defmodule ExMon.Game do
   end
 
   def player, do: Map.get(info(), :player)
+  def turn, do: Map.get(info(), :turn)
+  def fetch_player, do: Map.get(info(), player)
 end
